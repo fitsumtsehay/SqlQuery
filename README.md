@@ -1,6 +1,6 @@
 # SQL Query Questions
 
-#### 1. Create Table person and address.
+### 1. Create Table person and address.
 
 #### CREATE TABLE person (
   	person_id INT NOT NULL,
@@ -27,7 +27,7 @@
     ('3', 'Michelle', 'Mischa', 'Williams', '1985-03-05', '2020-07-02', '2'),
     -('4', 'Charles', 'Charlie', 'Whitaker', '1895-07-01', '2009-02-01', '3');
     
-#### 2. Write a query to select all rows from person.  If the person row has a value in preferred_first_name, select the preferred name instead of the value in first name.  Alias the column as REPORTING_NAME.
+### 2. Write a query to select all rows from person.  If the person row has a value in preferred_first_name, select the preferred name instead of the value in first name.  Alias the column as REPORTING_NAME.
 
  #### Query:
 ###### SELECT person_id, first_name, preferred_first_name, last_name, date_of_birth, hire_date, occupation,
@@ -39,7 +39,7 @@
 #### Output:
 ![image](https://user-images.githubusercontent.com/63597726/217131100-187f398a-5673-41ef-a467-f56f1c357cb9.png)
 
-#### 3. Write a query to select all rows from person that have a NULL occupation.
+### 3. Write a query to select all rows from person that have a NULL occupation.
 
 #### Sample Table:
 ![image](https://user-images.githubusercontent.com/63597726/217134930-ddbc6b92-cca9-4dad-9fd1-5283187d3e40.png)
@@ -52,7 +52,7 @@
 #### Output:
 ![image](https://user-images.githubusercontent.com/63597726/217136248-b4b9e471-49e9-41d1-88d6-f9bef1d35818.png)
 					
-#### 4. Write a query to select all rows from person that have a date_of_birth before August 7th, 1990.  
+### 4. Write a query to select all rows from person that have a date_of_birth before August 7th, 1990.  
 
 #### Sample Table: 
 ![image](https://user-images.githubusercontent.com/63597726/217136733-41e6e34f-1243-487f-976d-18d4e5ade748.png)
@@ -65,7 +65,7 @@
 #### Output:
 ![image](https://user-images.githubusercontent.com/63597726/217137155-581fb0f0-4693-4779-b39d-b5baa9a44fec.png)
 
-#### 5. Write a query to select all rows from person that have a hire_date in the past 100 days.
+### 5. Write a query to select all rows from person that have a hire_date in the past 100 days.
 
 #### Sample Table:
 ![image](https://user-images.githubusercontent.com/63597726/217138238-c80af229-530f-41f0-9c81-871e952ad673.png)
@@ -79,7 +79,7 @@
 #### Output:
 ![image](https://user-images.githubusercontent.com/63597726/217138559-ada3876d-0149-41e9-b6c2-4cb99809f58d.png)
 
-#### 6. Write a query to select rows from person that also have a row in address with address_type = 'HOME'.
+### 6. Write a query to select rows from person that also have a row in address with address_type = 'HOME'.
 
 #### Query: 
 SELECT * 
@@ -89,7 +89,7 @@ ON person.person_id = address.person_id AND address.address_type = 'Home'
 
 #### Output: 
  
-#### 7. Write a query to select all rows from person and only those rows from address that have a matching billing address (address_type = 'BILL').  If a matching billing address does not exist, display 'NONE' in the address_type column.
+### 7. Write a query to select all rows from person and only those rows from address that have a matching billing address (address_type = 'BILL').  If a matching billing address does not exist, display 'NONE' in the address_type column.
 
 #### Query: 
 SELECT * 
@@ -101,7 +101,7 @@ ON person.person_id = address.person_id AND address.address_type = 'Bill'
 ![image](https://user-images.githubusercontent.com/63597726/217129832-88029e09-af73-4864-bbd8-748f3c891d0f.png)
 
 
-#### 8. Write a query to count the number of addresses per address type.
+### 8. Write a query to count the number of addresses per address type.
 #### Query: 
 SELECT address_type, COUNT(*)
 FROM yale.address
@@ -111,7 +111,7 @@ address_type	COUNT(*)
 Home	3
 Bill	2
 
-#### 9. Write a query to select data in the following format:
+### 9. Write a query to select data in the following format:
 
 	Address_type           Home and Billing Address
 
@@ -132,7 +132,7 @@ Home	11921 Tildenwood Drive
 Bill	7701 Woodmont Ave
 Bill	4414 Willard Ave	
 
-#### 10. Write a query to update the person.occupation column to ‘X’ for all rows that have a ‘BILL’ address in the address table.
+### 10. Write a query to update the person.occupation column to ‘X’ for all rows that have a ‘BILL’ address in the address table.
 
 #### Query: 
 UPDATE person
