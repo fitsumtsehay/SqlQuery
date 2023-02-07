@@ -1,6 +1,6 @@
 # SQL Query Questions
 
-1.	####Create Table person and address.
+#### 1. Create Table person and address.
 
 CREATE TABLE person (
   	person_id INT NOT NULL,
