@@ -50,9 +50,8 @@ FROM person
 WHERE occupation is NULL;
 
 #### Output:
-5	Boby	Bob	Boyce	1990-09-04	2023-01-01	
-6	Franchesca	Franny	Gage	2000-03-04	2022-02-03	
-						
+![image](https://user-images.githubusercontent.com/63597726/217136248-b4b9e471-49e9-41d1-88d6-f9bef1d35818.png)
+					
 #### 4. Write a query to select all rows from person that have a date_of_birth before August 7th, 1990.  
 
 #### Sample Table:        
