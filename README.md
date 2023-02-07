@@ -112,34 +112,28 @@
 ![image](https://user-images.githubusercontent.com/63597726/217139705-67658584-49da-4589-a33d-dc5ccc200841.png)
 
 ### 9. Write a query to select data in the following format:
-
-	Address_type           Home and Billing Address
+######	Address_type           Home and Billing Address
 
 #### Query: 
-SELECT address_type, street_line_1 As Home_and_bill_Address
-FROM address
-WHERE address_type = 'home' 
-Union
-SELECT address_type, street_line_1
-FROM address
-WHERE address_type = 'bill'
+###### SELECT address_type, street_line_1 As Home_and_bill_Address
+###### FROM address
+###### WHERE address_type = 'home' 
+###### Union
+###### SELECT address_type, street_line_1
+###### FROM address
+###### WHERE address_type = 'bill'
 
 #### Output:
-Address_type	Home and Billing Address
-Home	8660 Rolling Rock Ln	
-Home	100 King Street	
-Home	11921 Tildenwood Drive
-Bill	7701 Woodmont Ave
-Bill	4414 Willard Ave	
+![image](https://user-images.githubusercontent.com/63597726/217140245-4bf2dced-54eb-4cc6-b0d0-954e200bbfeb.png)
 
 ### 10. Write a query to update the person.occupation column to ‘X’ for all rows that have a ‘BILL’ address in the address table.
 
 #### Query: 
-UPDATE person
-INNER JOIN address
-ON person.person_id = address.person_id
-SET person.occupation = 'X'
-WHERE address.address_type = 'Bill'
+###### UPDATE person
+###### INNER JOIN address
+###### ON person.person_id = address.person_id
+###### SET person.occupation = 'X'
+###### WHERE address.address_type = 'Bill'
 
 #### Output:
  ![image](https://user-images.githubusercontent.com/63597726/217129438-c7aef2a6-786f-4e2a-810f-f054c09d9735.png)
