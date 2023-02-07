@@ -133,7 +133,8 @@ LEFT JOIN address
 ON person.person_id = address.person_id AND address.address_type = 'Bill'
 
 Output: 
- 
+![image](https://user-images.githubusercontent.com/63597726/217129832-88029e09-af73-4864-bbd8-748f3c891d0f.png)
+
 
 8) Write a query to count the number of addresses per address type.
 Query: 
