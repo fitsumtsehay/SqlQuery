@@ -77,13 +77,7 @@
 ###### 1 and 100 order by hire_date desc
 
 #### Output:
-
-person_id	first_name	preferred_first_name	last_name	date_of_birth	hire_date	occupation	DiffDay
-5	Boby	Bob	Boyce	2/4/1990	1/1/2023	NULL	28
-
-
-
-
+![image](https://user-images.githubusercontent.com/63597726/217138559-ada3876d-0149-41e9-b6c2-4cb99809f58d.png)
 
 #### 6. Write a query to select rows from person that also have a row in address with address_type = 'HOME'.
 
