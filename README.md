@@ -54,14 +54,8 @@ WHERE occupation is NULL;
 					
 #### 4. Write a query to select all rows from person that have a date_of_birth before August 7th, 1990.  
 
-#### Sample Table:        
-person_id	first_name	preferred_first_name	last_name	date_of_birth	hire_date	occupation
-1	John	Johnny	Smith	5/1/1995	4/2/2005	S
-2	Susan	NULL	London	8/4/1989	5/6/2015	I
-3	Michelle	Mischa	Williams	3/5/1985	7/2/2020	D
-4	Charles	Charlie	Whitaker	7/1/1969	2/1/2009	F
-5	Boby	Bob	Boyce	2/4/1990	1/1/2023	NULL
-6	Franchesca	Franny	Gage	3/4/1980	2/3/2022	NULL
+#### Sample Table: 
+![image](https://user-images.githubusercontent.com/63597726/217136733-41e6e34f-1243-487f-976d-18d4e5ade748.png)
 
 #### Query:
 SELECT person_id, first_name, preferred_first_name, last_name, date_of_birth, hire_date, occupation
