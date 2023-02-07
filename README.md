@@ -82,20 +82,21 @@
 ### 6. Write a query to select rows from person that also have a row in address with address_type = 'HOME'.
 
 #### Query: 
-SELECT * 
-FROM person
-JOIN address
-ON person.person_id = address.person_id AND address.address_type = 'Home'
+###### SELECT * 
+###### FROM person
+###### JOIN address
+###### ON person.person_id = address.person_id AND address.address_type = 'Home'
 
 #### Output: 
+![image](https://user-images.githubusercontent.com/63597726/217139254-29ff4d9d-8382-485f-84b5-c873614884e3.png)
  
 ### 7. Write a query to select all rows from person and only those rows from address that have a matching billing address (address_type = 'BILL').  If a matching billing address does not exist, display 'NONE' in the address_type column.
 
 #### Query: 
-SELECT * 
-FROM person
-LEFT JOIN address
-ON person.person_id = address.person_id AND address.address_type = 'Bill'
+###### SELECT * 
+###### FROM person
+###### LEFT JOIN address
+###### ON person.person_id = address.person_id AND address.address_type = 'Bill'
 
 #### Output: 
 ![image](https://user-images.githubusercontent.com/63597726/217129832-88029e09-af73-4864-bbd8-748f3c891d0f.png)
@@ -103,13 +104,12 @@ ON person.person_id = address.person_id AND address.address_type = 'Bill'
 
 ### 8. Write a query to count the number of addresses per address type.
 #### Query: 
-SELECT address_type, COUNT(*)
-FROM yale.address
-GROUP BY address_type;
-Output:
-address_type	COUNT(*)
-Home	3
-Bill	2
+###### SELECT address_type, COUNT(*)
+###### FROM yale.address
+###### GROUP BY address_type;
+
+### Output:
+![image](https://user-images.githubusercontent.com/63597726/217139705-67658584-49da-4589-a33d-dc5ccc200841.png)
 
 ### 9. Write a query to select data in the following format:
 
