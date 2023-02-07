@@ -42,14 +42,7 @@ SELECT person_id, first_name, preferred_first_name, last_name, date_of_birth, hi
 #### 3. Write a query to select all rows from person that have a NULL occupation.
 
 #### Sample Table:
-person_id	first_name	preferred_first_name	last_name	date_of_birth	hire_date	occupation
-1	John	Johnny	Smith	5/1/1995	4/2/2005	S	
-2	Susan	NULL	London	8/4/1989	5/6/2015	I	
-3	Michelle	Mischa	Williams	3/5/1985	7/2/2020	D	
-4	Charles	Charlie	Whitaker	7/1/1969	2/1/2009	F	
-5	Boby	Bob	Boyce	9/4/1990	1/1/2023	NULL	
-6	Franchesca	Franny	Gage	3/4/2000	2/3/2022	NULL	
-							
+![image](https://user-images.githubusercontent.com/63597726/217134930-ddbc6b92-cca9-4dad-9fd1-5283187d3e40.png)
 
 #### Query:
 SELECT person_id, first_name, preferred_first_name, last_name, date_of_birth, hire_date, occupation
