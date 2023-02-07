@@ -13,13 +13,13 @@
   	PRIMARY KEY (`person_id`));
 
 #### CREATE TABLE address(
-address_id INT(10) NOT NULL PRIMARY KEY,
-person_id  INT(10) NOT NULL REFERENCES person (person_id),
-address_type VARCHAR(4) NOT NULL,
-street_line_1 VARCHAR(100),
-city VARCHAR(100),
-state VARCHAR(100),
-zip_code VARCHAR(30));
+	address_id INT(10) NOT NULL PRIMARY KEY,
+	person_id  INT(10) NOT NULL REFERENCES person (person_id),
+	address_type VARCHAR(4) NOT NULL,
+	street_line_1 VARCHAR(100),
+	city VARCHAR(100),
+	state VARCHAR(100),
+	zip_code VARCHAR(30));
 
 #### INSERT INTO person (person_id, first_name, preferred_first_name, last_name, date_of_birth, hire_date, occupation)
      VALUES ('1', 'John', 'Johnny', 'Smith', '1995-05-01', '2005-04-02', '1'),
