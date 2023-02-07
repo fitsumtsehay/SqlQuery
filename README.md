@@ -36,12 +36,7 @@ End AS Reporting_Name
 From person;
 
 Output:
-person_id	first_name	preferred_first_name	last_name	date_of_birth	hire_date	occupation	Reporting_Name
-1	John	Johnny	Smith	5/1/1995	4/2/2005	S	Johnny	
-2	Susan	NULL	London	8/4/1989	5/6/2015	I	Susan	
-3	Michelle	Mischa	Williams	3/5/1985	7/2/2020	D	Mischa	
-4	Charles	Charlie	Whitaker	1895-07-01	2/1/2009	F	Charlie	
-
+![image](https://user-images.githubusercontent.com/63597726/217131100-187f398a-5673-41ef-a467-f56f1c357cb9.png)
 
 3) Write a query to select all rows from person that have a NULL occupation.
 
