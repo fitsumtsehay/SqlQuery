@@ -30,7 +30,7 @@
 #### 2. Write a query to select all rows from person.  If the person row has a value in preferred_first_name, select the preferred name instead of the value in first name.  Alias the column as REPORTING_NAME.
 
  #### Query:
-SELECT person_id, first_name, preferred_first_name, last_name, date_of_birth, hire_date, occupation,
+###### SELECT person_id, first_name, preferred_first_name, last_name, date_of_birth, hire_date, occupation,
 ###### CASE WHEN person.preferred_first_name is NULL THEN first_name
 ###### ELSE person.preferred_first_name
 ###### End AS Reporting_Name
@@ -45,9 +45,9 @@ SELECT person_id, first_name, preferred_first_name, last_name, date_of_birth, hi
 ![image](https://user-images.githubusercontent.com/63597726/217134930-ddbc6b92-cca9-4dad-9fd1-5283187d3e40.png)
 
 #### Query:
-SELECT person_id, first_name, preferred_first_name, last_name, date_of_birth, hire_date, occupation
-FROM person
-WHERE occupation is NULL;
+###### SELECT person_id, first_name, preferred_first_name, last_name, date_of_birth, hire_date, occupation
+###### FROM person
+###### WHERE occupation is NULL;
 
 #### Output:
 ![image](https://user-images.githubusercontent.com/63597726/217136248-b4b9e471-49e9-41d1-88d6-f9bef1d35818.png)
@@ -58,9 +58,9 @@ WHERE occupation is NULL;
 ![image](https://user-images.githubusercontent.com/63597726/217136733-41e6e34f-1243-487f-976d-18d4e5ade748.png)
 
 #### Query:
-SELECT person_id, first_name, preferred_first_name, last_name, date_of_birth, hire_date, occupation
-FROM person
-WHERE (date_of_birth < '1990-08-07');
+###### SELECT person_id, first_name, preferred_first_name, last_name, date_of_birth, hire_date, occupation
+###### FROM person
+###### WHERE (date_of_birth < '1990-08-07');
 
 #### Output:
 ![image](https://user-images.githubusercontent.com/63597726/217137155-581fb0f0-4693-4779-b39d-b5baa9a44fec.png)
@@ -77,10 +77,10 @@ person_id	first_name	preferred_first_name	last_name	date_of_birth	hire_date	occu
 6	Franchesca	Franny	Gage	3/4/1980	2/3/2022	NULL
 
 #### Query:
-select *, DATEDIFF(current_date(), hire_date)as 
-DiffDay from person
-where DATEDIFF(current_date(), hire_date) between
-1 and 100 order by hire_date desc
+###### select *, DATEDIFF(current_date(), hire_date)as 
+###### DiffDay from person
+###### where DATEDIFF(current_date(), hire_date) between
+###### 1 and 100 order by hire_date desc
 
 #### Output:
 person_id	first_name	preferred_first_name	last_name	date_of_birth	hire_date	occupation	DiffDay
