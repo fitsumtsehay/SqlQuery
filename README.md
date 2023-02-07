@@ -63,13 +63,7 @@ FROM person
 WHERE (date_of_birth < '1990-08-07');
 
 #### Output:
-person_id	first_name	preferred_first_name	last_name	date_of_birth	hire_date	occupation
-2	Susan	NULL	London	8/4/1989	5/6/2015	I
-3	Michelle	Mischa	Williams	3/5/1985	7/2/2020	D
-4	Charles	Charlie	Whitaker	7/1/1969	2/1/2009	F
-5	Boby	Bob	Boyce	2/4/1990	1/1/2023	NULL
-6	Franchesca	Franny	Gage	3/4/1980	2/3/2022	NULL
-
+![image](https://user-images.githubusercontent.com/63597726/217137155-581fb0f0-4693-4779-b39d-b5baa9a44fec.png)
 
 #### 5. Write a query to select all rows from person that have a hire_date in the past 100 days.
 
