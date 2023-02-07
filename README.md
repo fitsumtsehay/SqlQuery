@@ -19,7 +19,7 @@
 	street_line_1 VARCHAR(100),
     	city VARCHAR(100),
     	state VARCHAR(100),
-   	 zip_code VARCHAR(30));
+   	zip_code VARCHAR(30));
 
 #### INSERT INTO person (person_id, first_name, preferred_first_name, last_name, date_of_birth, hire_date, occupation)
      VALUES ('1', 'John', 'Johnny', 'Smith', '1995-05-01', '2005-04-02', '1'),
