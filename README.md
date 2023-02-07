@@ -31,10 +31,10 @@
 
  #### Query:
 SELECT person_id, first_name, preferred_first_name, last_name, date_of_birth, hire_date, occupation,
-#### CASE WHEN person.preferred_first_name is NULL THEN first_name
-#### ELSE person.preferred_first_name
-#### End AS Reporting_Name
-#### From person;
+######## CASE WHEN person.preferred_first_name is NULL THEN first_name
+######## ELSE person.preferred_first_name
+######## End AS Reporting_Name
+######## From person;
 
 #### Output:
 ![image](https://user-images.githubusercontent.com/63597726/217131100-187f398a-5673-41ef-a467-f56f1c357cb9.png)
