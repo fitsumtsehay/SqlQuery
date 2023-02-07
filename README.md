@@ -13,7 +13,7 @@
   	PRIMARY KEY (`person_id`));
 
 #### CREATE TABLE address(
-	address_id INT(10) NOT NULL PRIMARY KEY,
+	#### address_id INT(10) NOT NULL PRIMARY KEY,
     	person_id  INT(10) NOT NULL REFERENCES person (person_id),
     	address_type VARCHAR(4) NOT NULL,
 	street_line_1 VARCHAR(100),
